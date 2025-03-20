@@ -1,0 +1,70 @@
+/* Logos clients */
+
+.logos-clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(var(--white));
+    padding: 50px 50px;
+    gap: 50px;
+  }
+  
+  .logos-clients.filled {
+    background-color: rgb(var(--principal));
+  }
+  
+  .logos-clients .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+    width: 50vw;
+  }
+  
+  .logos-clients.filled h2 {
+    color: rgb(var(--white));
+  }
+  
+  .logos-clients.filled p {
+    color: rgb(var(--white));
+  }
+  
+  .logos-clients .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .logos-clients .logos img {
+    width: 125px;
+    height: auto;
+  }
+
+
+  /** Responsive **/
+
+@media only screen and (max-width: 768px){
+    .logos-clients {
+        padding: 50px 30px;
+    }
+    
+    .logos-clients .content {
+        width: 75vw;
+    }
+
+    .logos-clients .logos {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 20px;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .logos-clients .logos::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+}

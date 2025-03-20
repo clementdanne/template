@@ -1,0 +1,202 @@
+/* Pricing Table */
+
+.pricing-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 100px 50px;
+    gap: 50px;
+}
+
+.pricing-table .content {
+    width: 60%;
+}
+
+.pricing-table-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    gap: 50px;
+}
+
+.pricing-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+    gap: 20px;
+    min-height: 550px;
+    width: 33%;
+    padding: 30px 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(var(--principal));
+    background-color: rgb(var(--white));
+}
+
+.pricing-item .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pricing-item .text .price {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.pricing-item .text .price .surtitle.black span {
+    color: rgb(var(--black));
+    font-size: 28px;
+}
+
+.pricing-item .text ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.pricing-item .text ul li {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(var(--text));
+    padding-bottom: 5px;
+}
+
+.pricing-item .text ul li i {
+    color: rgb(var(--secondary));
+    margin-right: 15px;
+}
+
+.pricing-item .button {
+    width: 100%;
+}
+
+.pricing-item.filled {
+    background-color: rgb(var(--principal));
+    min-height: 575px;
+}
+
+.pricing-item.filled .surtitle, .pricing-item.filled .text .price .surtitle.black span, .pricing-item.filled p, .pricing-item.filled .text ul li {
+    color: rgb(var(--white));
+}
+
+.pricing-item .tag {
+    position: absolute;
+    top: -15px;
+    background-color: rgb(var(--white));
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(var(--principal));
+    padding: 5px 10px;
+}
+
+.pricing-item .tag p, .pricing-table.filled .pricing-item .tag p {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    color: rgb(var(--principal)) !important;
+}
+
+.pricing-table.filled-clear {
+    background-color: rgb(var(--principal-clear));
+}
+
+.pricing-table.filled {
+    background-color: rgb(var(--principal));
+}
+
+.pricing-table.filled .content .surtitle, .pricing-table.filled .content h2, .pricing-table.filled .content p {
+    color: rgb(var(--white));
+}
+
+.pricing-table.filled .pricing-item.filled {
+    background-color: rgb(var(--white));
+    min-height: 575px;
+}
+
+.pricing-item.filled .text .price .surtitle.black span, .pricing-item.filled p, .pricing-item.filled .text ul li {
+    color: rgb(var(--white));
+}
+
+.pricing-table.filled .pricing-item.filled .surtitle.principal {
+    color: rgb(var(--principal));
+}
+
+.pricing-table.filled .pricing-item.filled .surtitle.black, .pricing-table.filled .pricing-item.filled .surtitle.black span, .pricing-table.filled .pricing-item.filled p, .pricing-table.filled .pricing-item.filled ul li {
+    color: rgb(var(--black));
+}
+
+.pricing-item.rounded {
+    border-radius: 30px;
+}
+
+.tag.rounded {
+    border-radius: 30px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px){
+    .pricing-table {
+        padding: 50px 30px;
+        align-items: center;
+    }
+
+    .pricing-table .content {
+        width: 80vw;
+    }
+
+    .pricing-table .pricing-table-row {
+        width: 100%;
+        padding: 20px 0;
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 10px;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .pricing-table .pricing-table-row .pricing-item{
+        min-width: 30vw; /* Assure que chaque colonne occupe 25% de la largeur de la fenêtre */
+        max-width: 30vw; /* Limite la largeur à 25% */
+        flex-shrink: 0; /* Empêche les colonnes de rétrécir */
+    }
+
+    .pricing-table .pricing-table-row .pricing-item .text {
+        width: 100%; /* Le paragraphe prend toute la largeur de sa colonne */
+        white-space: normal; /* Permet au texte de revenir à la ligne si nécessaire */
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .pricing-table {
+        width: 100vw;
+    }
+    
+    .pricing-table .content {
+        width: 100vw;
+    }
+
+    .pricing-table .pricing-table-row {
+        gap: 30px;
+    }
+
+    .pricing-table .pricing-table-row .pricing-item{
+        min-width: 75vw; /* Assure que chaque colonne occupe 25% de la largeur de la fenêtre */
+        max-width: 75vw; /* Limite la largeur à 25% */
+        flex-shrink: 0; /* Empêche les colonnes de rétrécir */
+    }
+}

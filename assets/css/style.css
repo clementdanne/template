@@ -1,0 +1,756 @@
+/* Poppins font */
+
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  padding: 0;
+  gap: 0;
+  background-color: rgb(var(--white));
+}
+
+
+/* Colors */
+
+:root {
+  --principal: 243, 135, 68;
+  --secondary: 46, 144, 250;
+  --principal-clear : 239, 207, 187;
+  --secondary-clear: 204, 223, 245;
+  --text: 24, 29, 39;
+  --text-clear: 112, 123, 144;
+  --black: 0, 0, 0;
+  --white: 255, 255, 255;
+}
+
+/* Texts */
+
+p {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: rgb(rgb(var(--text)));
+  margin: 0;
+}
+
+p.principal {
+  color: rgb(var(--principal));
+}
+
+p.secondary-clear {
+  color: rgb(rgb(var(--secondary-clear)));
+}
+
+h1 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 40px;
+  color: rgb(rgb(var(--text)));
+}
+
+span {
+  color: rgb(var(--principal));
+}
+
+h2 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;
+  color: rgb(rgb(var(--text)));
+}
+
+h3 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 28px;
+  color: rgb(var(--text));
+}
+
+h4 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: rgb(var(--text));
+}
+
+a {
+  color: rgb(var(--principal));
+  font-family: "Poppins", serif;
+}
+
+.surtitle {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  color: rgb(var(--secondary));
+}
+
+.surtitle.principal {
+  color: rgb(var(--principal));
+}
+
+.surtitle.black {
+  color: rgb(var(--black));
+}
+
+
+.small-text {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  color: rgb(var(--text));
+}
+
+
+/* Inputs */
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-line {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.label {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  color: rgb(var(--principal));
+}
+
+.input {
+  box-sizing: border-box;
+  padding: 14px 10px;
+  border: 1px solid rgb(var(--principal));
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  background-color: rgb(var(--white));
+}
+
+.input.rounded {
+  border-radius: 15px;
+}
+
+.input::placeholder {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: rgb(var(--principal));
+}
+
+.label-small {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  color: rgb(var(--text));
+}
+
+
+/* Buttons */
+
+button.button, a.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border: 1px solid;
+  width: fit-content;
+  height: fit-content;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+button.small, a.small {
+  padding: 5px 10px;
+}
+
+button.rounded, a.rounded {
+  border-radius: 15px;
+}
+
+button.small.rounded, a.small.rounded {
+  border-radius: 10px;
+}
+
+button.principal, a.principal {
+  background-color: rgb(var(--principal)) !important;
+  border-color: rgb(var(--principal)) !important;
+  color: rgb(var(--white)) !important;
+}
+
+button.principal:hover, a.principal:hover {
+  background-color: rgb(var(--white)) !important;
+  color: rgb(var(--principal)) !important;
+}
+
+button.secondary, a.secondary {
+  background-color: rgb(var(--white)) !important;
+  border-color: rgb(var(--principal)) !important;
+  color: rgb(var(--principal)) !important;
+}
+
+button.secondary:hover, a.secondary:hover {
+  background-color: rgb(var(--secondary)) !important;
+  border-color: rgb(var(--secondary)) !important;
+  color: rgb(var(--white)) !important;
+}
+
+
+/* Common elements */
+
+.filled {
+  background-color: rgb(var(--principal));
+}
+
+.filled-clear {
+  background-color: rgb(var(--principal-clear));
+}
+
+.simple-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.double-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+img.rounded, div.rounded {
+  border-radius: 50px;
+}
+
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(var(--principal), 0.3); 
+  background-color: rgb(var(--white));
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header.filled {
+  background-color: rgb(var(--principal));
+}
+
+.header .company-logo {
+  width: auto;
+  height: 35px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  gap: 50px;
+}
+
+.menu-link a {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.header .menu-link a {
+  color: rgb(var(--text));
+}
+
+.header .menu-link a:hover {
+  color: rgb(var(--principal));
+}
+
+.header.filled .menu-link a {
+  color: rgb(var(--white));
+}
+
+.header.filled .menu-link a:hover {
+  color: rgb(var(--secondary));
+}
+
+
+/* Slider */
+
+.slider-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(var(--white));
+  padding: 50px 50px;
+  gap: 50px;
+}
+
+.slider-section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0px;
+  width: 60vw;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  position: relative;
+}
+
+.slides-wrapper {
+  width: 50vw;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-section .slider {
+  display: none; /* J'ai supprimé la double déclaration de display */
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  width: 100%;
+  gap: 30px;
+  padding: 0 0 30px 0;
+  border: 1px solid;
+  border-color: rgb(var(--principal));
+}
+
+.slider-section-image .slider {
+  height: 500px;
+  width: 500px;
+  padding: 0;
+}
+
+/* Ajouter cette classe pour les slides actives */
+.slider-section .slider.active {
+  display: flex;
+}
+
+.slider-section.rounded .slider {
+  border-radius: 25px;
+}
+
+
+.slider .slider-image {
+  height: 250px;
+  width: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.slider-section.rounded .slider .slider-image {
+  border-radius: 25px 25px 0 0;
+}
+
+.slider-section-image.rounded .slider .slider-image {
+  border-radius: 25px;
+}
+
+.slider-section-image .slider .slider-image {
+  height: 500px;
+  width: 500px;
+}
+
+.slider-section .slider .content {
+  text-align: left;
+  width: auto;
+  align-items: flex-start;
+  padding: 0 20px;
+  gap: 40px;
+}
+
+.slider-arrow {
+  position: absolute;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: rgb(var(--principal));
+  cursor: pointer;
+  z-index: 10;
+}
+
+.slider-prev {
+  left: 20px;
+}
+
+.slider-next {
+  right: 20px;
+}
+
+.slider-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.pagination-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #f8d0ba; /* Couleur inactive */
+  cursor: pointer;
+}
+
+.pagination-dot.active {
+  background-color: #f18c3e; /* Couleur active (orange) */
+}
+
+
+/* Big CTA */
+
+.big-cta {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 50px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.big-cta .content {
+  width: 40%;
+}
+
+.big-cta.filled-clear {
+  background-color: rgb(var(--principal-clear));
+}
+
+.big-cta.filled {
+  background-color: rgb(var(--principal));
+}
+
+.big-cta.filled .content .surtitle, .big-cta.filled .content h2, .big-cta.filled .content span {
+  color: rgb(var(--white));
+}
+
+
+/* Newsletter Form */
+
+.newsletter-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 25px 50px;
+  gap: 100px;
+}
+.newsletter-form .content {
+  width: auto;
+}
+
+.newsletter-form h2 {
+  color: rgb(var(--principal));
+}
+
+.newsletter-form .form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.newsletter-form .form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.newsletter-form .form form .form-line {
+  gap: 40px;
+}
+
+.newsletter-form .form form .form-line .form-input-container .label-small {
+  color: rgb(var(--principal));
+}
+
+.newsletter-form.filled h2, .newsletter-form.filled p, .newsletter-form.filled .form form .form-line .form-input-container .label-small {
+  color: rgb(var(--white));
+}
+
+
+/* Contact Form */
+
+.contact-form {
+  display: flex;
+  flex-direction: row;
+  padding: 100px 50px;
+  gap: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form .left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 40%;
+}
+
+.contact-form .left-col .content h2, .contact-form .left-col .contact-infos .surtitle {
+  color: rgb(var(--principal));
+}
+
+.contact-form .left-col .contact-infos .contact-info {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  color: rgb(var(--text));
+}
+
+.contact-form .form {
+  width: 60%;
+}
+
+.contact-form .form form button {
+  width: 100%;
+}
+
+.contact-form.filled .left-col .content h2, .contact-form.filled .left-col .content p, .contact-form.filled .left-col .contact-infos .surtitle, .contact-form.filled .left-col .contact-infos .contact-info, .contact-form.filled .left-col p, .contact-form.filled .form form .label {
+  color: rgb(var(--white));
+}
+
+.map.rounded iframe {
+  border-radius: 15px;
+}
+
+
+.contact-form .calendly {
+  flex: 1;
+  position: relative;
+  height: fit-content;
+  width: 100%;
+}
+
+.calendly-inline-widget {
+  top: -70;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+  overflow: hidden;
+  padding: 0;
+}
+
+
+/** Responsive **/
+
+
+@media only screen and (max-width: 768px){
+  button.button, a.button {
+    width: 100%;
+  }
+  .simple-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .double-buttons {
+    width: 100%;
+  }
+
+  .simple-button button.button, .simple-button a.button {
+    width: 50%;
+  }
+
+  .double-buttons button.button, .double-buttons a.button {
+    width: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 480px){
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .double-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .simple-button button.button, .simple-button a.button {
+    width: 100%;
+  }
+
+  .double-buttons button.button, .double-buttons a.button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,135 @@
+/* Testimonial Photo */
+
+.testimonial {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 100px 50px;
+    gap: 50px;
+    position: relative;
+}
+
+.testimonial.filled-clear {
+    background-color: rgb(var(--principal-clear));
+}
+
+.testimonial.filled {
+    background-color: rgb(var(--principal));
+}
+
+.testimonial.filled p {
+    color: rgb(var(--white));
+}
+
+.testimonial.filled span {
+    color: rgb(var(--white));
+}
+
+.testimonial .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 70vw;
+}
+
+.testimonial img {
+    width: 30vw;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.testimonial .content .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.testimonial .content .logos img {
+    width: 125px;
+    height: auto;
+}
+
+
+/* Testimonial Logo */
+
+.testimonial.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 100px 50px;
+    gap: 50px;
+    position: relative;
+}
+
+.testimonial.logo.filled p {
+    color: rgb(var(--white));
+}
+
+.testimonial.logo.filled span {
+    color: rgb(var(--white));
+}
+
+.testimonial.logo img {
+    width: 15vw;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.testimonial.logo .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    width: 80vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .testimonial, .testimonial.logo {
+        flex-direction: column;
+        padding: 50px 30px;
+        gap: 30px;
+    }
+
+    .testimonial.logo {
+        align-items: flex-start;
+    }
+
+    .testimonial img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .testimonial .content, .testimonial.logo .content {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .testimonial.logo img {
+        width: 30vw;
+    }
+
+    .testimonial .content .logos {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .testimonial img {
+        height: 330px;
+    }
+
+    .testimonial .content .logos img {
+        width: 40%;
+    }
+
+    .testimonial.logo img {
+        width: 40vw;
+    }
+}

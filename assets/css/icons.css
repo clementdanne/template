@@ -1,0 +1,196 @@
+
+
+
+/* Icons */
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px;
+    gap: 75px;
+}
+
+.icons.filled-clear {
+    background-color: rgb(var(--principal-clear));
+}
+
+.icons.filled {
+    background-color: rgb(var(--principal));
+}
+
+.icons.filled p {
+    color: rgb(var(--white));
+}
+
+.icons.filled h2 , .icons.filled h4 {
+    color: rgb(var(--white));
+}
+
+.icons .content {
+    width: 60vw;
+}
+
+.icons .col-icons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 50px;
+}
+
+.icons .col-icons .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons .col-icons .col .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(var(--principal));
+    width: fit-content;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.icons.filled .col-icons .col .icon-container {
+    background-color: rgb(var(--white));
+}
+
+.icons .col-icons .col .icon-container i {
+    font-size: 70px;
+    color: rgb(var(--white));
+}
+
+.icons.filled .col-icons .col .icon-container i {
+    color: rgb(var(--principal));
+}
+
+
+/* Icons Mini */
+
+.icons-mini {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+    gap: 50px;
+}
+
+.icons-mini.filled-clear {
+    background-color: rgb(var(--principal-clear));
+}
+
+.icons-mini.filled {
+    background-color: rgb(var(--principal));
+    color: rgb(var(--white));
+}
+
+.icons-mini.filled span, .icons-mini.filled p, .icons-mini.filled h2, .icons-mini.filled h4 {
+    color: rgb(var(--white));
+}
+
+.icons-mini .content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.icons-mini .col-icons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 50px;
+}
+
+.icons-mini .col-icons .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.icons-mini .col-icons .col i {
+    font-size: 50px;
+    color: rgb(var(--principal));
+}
+
+.icons-mini.filled .col-icons .col i {
+    color: rgb(var(--white));
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 768px) {
+    .icons {
+        padding: 50px 30px;
+    }
+
+    .icons .col-icons {
+        justify-content: flex-start;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 20px;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .icons .col-icons .col {
+        min-width: 25vw; /* Assure que chaque colonne occupe 25% de la largeur de la fenêtre */
+        max-width: 25vw; /* Limite la largeur à 25% */
+        flex-shrink: 0; /* Empêche les colonnes de rétrécir */
+    }
+
+    .icons .col-icons .col p {
+        width: 100%; /* Le paragraphe prend toute la largeur de sa colonne */
+        text-align: center; /* Centrer le texte pour correspondre au style des colonnes */
+        white-space: normal; /* Permet au texte de revenir à la ligne si nécessaire */
+    }
+
+    .icons .col-icons::-webkit-scrollbar {
+        display: none;  /* Safari and Chrome */
+    }
+
+    .icons-mini {
+        padding: 50px 30px;
+    }
+
+    .icons-mini .content {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .icons .content {
+        width: 100vw;
+    }
+
+    .icons .col-icons {
+        gap: 50px;
+    }
+
+    .icons .col-icons .col {
+        min-width: 40vw; /* Assure que chaque colonne occupe 25% de la largeur de la fenêtre */
+        max-width: 40vw; /* Limite la largeur à 25% */
+        flex-shrink: 0; /* Empêche les colonnes de rétrécir */
+    }
+
+    .icons-mini .col-icons {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 10px;
+    }
+    
+    .icons-mini .col-icons .col {
+        min-width: 40vw; /* Assure que chaque colonne occupe 25% de la largeur de la fenêtre */
+        max-width: 40vw; /* Limite la largeur à 25% */
+        flex-shrink: 0; /* Empêche les colonnes de rétrécir */
+    }
+}

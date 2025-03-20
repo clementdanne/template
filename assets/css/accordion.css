@@ -1,0 +1,181 @@
+/* Style général */
+
+.accordion-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(var(--white));
+    padding: 50px 50px;
+    gap: 50px;
+}
+
+.accordion-section .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+    width: 60vw;
+}  
+
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+}
+
+.accordion-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    row-gap: 0;
+    border: 0.5px;
+    border-style: hidden hidden solid hidden;
+    border-color: rgb(var(--principal-clear));
+}
+
+.accordion-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(var(--principal));
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-radius: 0;
+}
+
+.accordion-button:hover {
+    font-weight: 500;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.accordion-section.rounded .icon-container {
+    border-radius: 50%;
+    background-color: rgb(var(--white));
+    box-shadow: 0px 0px 10px rgba(var(--principal), 0.25);
+}
+
+.icon-container i {
+    color: rgb(var(--principal));
+    font-size: 16px;
+}
+
+.panel {
+    padding: 0;
+    background-color: transparent;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--text);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Style général filled */
+
+.accordion-section.filled-clear {
+    background-color: rgb(var(--principal-clear));
+}
+
+.accordion-section.filled-clear .accordion-item {
+    border-color: rgb(var(--principal));
+}
+
+.accordion-section.filled {
+    background-color: rgb(var(--principal));
+}
+
+.accordion-section.filled .content .surtitle, .accordion-section.filled .content h2, .accordion-section.filled .content p, .accordion-section.filled .content span {
+    color: rgb(var(--white));
+}
+
+.accordion-section.filled .accordion-item .accordion-button, .accordion-section.filled .accordion-item .accordion-button i, .accordion-section.filled .accordion-item .panel {
+    color: rgb(var(--white));
+}
+
+/* Style rounded */
+
+.accordion-section.rounded .accordion-container {
+    row-gap: 15px;
+}
+
+.accordion-section.rounded .accordion-item {
+    border-radius: 15px;
+    padding: 20px 10px;
+    border-style: none;
+    box-shadow: 0 5px 10px rgba(var(--black), 0.1);
+    background-color: rgb(var(--white));
+}
+
+/* Style rounded filled */
+
+.accordion-section.rounded.filled .accordion-item .accordion-button, .accordion-section.rounded.filled .accordion-item .accordion-button i {
+    color: rgb(var(--principal));
+}
+
+.accordion-section.rounded.filled .accordion-item .panel {
+    color: initial;
+}
+
+/* Classes actives */
+
+.accordion-button.active {
+    font-weight: 500;
+}
+
+.accordion-item.active {
+    row-gap: 15px;
+}
+
+.accordion-section.rounded .icon-container.active {
+    background-color: rgb(var(--principal));
+}
+
+.icon-container.active i {
+    transform: rotate(90deg);
+}
+
+.accordion-section.rounded .icon-container.active i, .accordion-section.rounded.filled .icon-container.active i {
+    color: rgb(var(--white));
+}
+
+/** Responsive **/
+
+@media only screen and (max-width: 768px) {
+    .accordion-section {
+        padding: 30px 30px;
+        gap: 30px;
+    }
+
+    .accordion-section .content, .accordion-section .accordion-container {
+        width: 100%;
+    }
+}
+
+/** Responsive **/
+
+@media only screen and (max-width: 480px) {
+
+}
